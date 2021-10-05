@@ -32,7 +32,6 @@ function Printer(adapter, options) {
 
 };
 
-Printer.bufferWriter = bufferWriter;
 
 Printer.create = function (device) {
   const printer = new Printer(device);
@@ -58,6 +57,9 @@ Printer.prototype.model = function (_model) {
   this._model = _model;
   return this;
 };
+
+Printer.prototype.bufferWriter = bufferWriter;
+
 
 /**
  * Set character code table
