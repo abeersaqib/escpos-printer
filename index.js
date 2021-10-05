@@ -58,7 +58,7 @@ Printer.prototype.model = function (_model) {
   return this;
 };
 
-Printer.prototype.bufferWriter = bufferWriter;
+Printer.prototype.encoder = new bufferWriter();
 
 
 /**
