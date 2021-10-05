@@ -67,7 +67,7 @@ Image.barcode = function(content,jsBarCodeOptions, callback){
 
   JsBarcode(canvas, content, jsBarCodeOptions);
   const barCodePath = path.resolve(os.tmpdir(), uuid.v4()+'.png');
-  const out = fs.createWriteStream();
+  const out = fs.createWriteStream(barCodePath);
   const stream = canvas.createPNGStream(barCodePath)
   stream.pipe(out)
   out.on('finish', () =>{
