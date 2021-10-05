@@ -1,6 +1,7 @@
 'use strict';
 const getPixels = require('get-pixels');
 const uuid = require('uuid');
+const path = require('path');
 
 var JsBarcode = require('jsbarcode');
 const fs = require('fs')
