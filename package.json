@@ -1,6 +1,5 @@
 {
   "name": "escpos-abeer",
-  "version": "5.0.0",
   "description": "ESC/POS Printer driver for nodejs",
   "main": "index.js",
   "scripts": {
